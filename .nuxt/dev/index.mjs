@@ -164,23 +164,6 @@ const errorHandler = (async function errorhandler(error, event) {
   return send(event, html);
 });
 
-const script$1 = `
-if (!window.__NUXT_DEVTOOLS_TIME_METRIC__) {
-  Object.defineProperty(window, '__NUXT_DEVTOOLS_TIME_METRIC__', {
-    value: {},
-    enumerable: false,
-    configurable: true,
-  })
-}
-window.__NUXT_DEVTOOLS_TIME_METRIC__.appInit = Date.now()
-`;
-
-const _uZC90UBwkV = (function(nitro) {
-  nitro.hooks.hook("render:html", (htmlContext) => {
-    htmlContext.head.push(`<script>${script$1}<\/script>`);
-  });
-});
-
 const rootDir = "C:/Users/JustinGreen/Desktop/Smokey-Dev/master-tools";
 
 const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[],"style":[],"script":[],"noscript":[]};
@@ -278,8 +261,7 @@ const _rH6hs6oFvY = (function(nitro) {
 });
 
 const plugins = [
-  _uZC90UBwkV,
-_m0mHYAvjWl,
+  _m0mHYAvjWl,
 _rH6hs6oFvY
 ];
 
@@ -561,9 +543,6 @@ const _inlineRuntimeConfig = {
       "/__nuxt_error": {
         "cache": false
       },
-      "/confirm": {
-        "ssr": false
-      },
       "/_nuxt/builds/meta/**": {
         "headers": {
           "cache-control": "public, max-age=31536000, immutable"
@@ -580,7 +559,7 @@ const _inlineRuntimeConfig = {
     "supabase": {
       "url": "https://bbbwfbmgghrbbktvusjm.supabase.co",
       "key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJiYndmYm1nZ2hyYmJrdHZ1c2ptIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzc2NDAwNDgsImV4cCI6MjA1MzIxNjA0OH0.aFaHqsHUxHONAfhTnqzzd8Vsaad9abM8ZTfzIpvS5X8",
-      "redirect": true,
+      "redirect": false,
       "redirectOptions": {
         "login": "/login",
         "callback": "/confirm",

@@ -1,12 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   modules: [
     '@nuxt/ui',
     '@nuxt/icon',
     '@nuxtjs/supabase',
-    // '@nuxtjs/redirectOptions',
   ],
   css: ['@/assets/css/main.css', '@/assets/css/tailwind.css'],
 
@@ -17,12 +16,19 @@ export default defineNuxtConfig({
   supabase: {
     url: process.env.SUPABASE_URL,
     key: process.env.SUPABASE_KEY,
-    redirect: true,
-    cookieOptions: {
-      maxAge: 60 * 60 * 8,
-      sameSite: 'lax',
-      secure: true
-    },
+    redirect: false,
+    // redirectOptions: {
+    //   login: '/',
+    //   callback: '/',
+    //   include: undefined,
+    //   exclude: [],
+    //   cookieRedirect: false,
+    // },
+    // cookieOptions: {
+    //   maxAge: 60 * 60 * 8,
+    //   sameSite: 'lax',
+    //   secure: true
+    // },
   },
 
   // Enable build transpilation for specific modules if necessary

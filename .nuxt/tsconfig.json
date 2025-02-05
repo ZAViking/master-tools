@@ -174,8 +174,6 @@
     "../node_modules/@nuxt/ui/dist/runtime",
     "../node_modules/@nuxtjs/supabase/runtime",
     "../node_modules/@nuxtjs/supabase/dist/runtime",
-    "../node_modules/@nuxt/devtools/runtime",
-    "../node_modules/@nuxt/devtools/dist/runtime",
     "../node_modules/@nuxt/telemetry/runtime",
     "../node_modules/@nuxt/telemetry/dist/runtime",
     ".."
@@ -189,7 +187,6 @@
     "../node_modules/@nuxtjs/tailwindcss/node_modules",
     "../node_modules/@nuxt/ui/node_modules",
     "../node_modules/@nuxtjs/supabase/node_modules",
-    "../node_modules/@nuxt/devtools/node_modules",
     "../node_modules/@nuxt/telemetry/node_modules",
     "../node_modules/@nuxt/icon/runtime/server",
     "../node_modules/@nuxt/icon/dist/runtime/server",
@@ -201,8 +198,6 @@
     "../node_modules/@nuxt/ui/dist/runtime/server",
     "../node_modules/@nuxtjs/supabase/runtime/server",
     "../node_modules/@nuxtjs/supabase/dist/runtime/server",
-    "../node_modules/@nuxt/devtools/runtime/server",
-    "../node_modules/@nuxt/devtools/dist/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
     "../node_modules/@nuxt/telemetry/dist/runtime/server",
     "../.output"
