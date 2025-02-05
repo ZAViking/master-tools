@@ -4,11 +4,18 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxt/ui',
-    '@nuxt/icon'
+    '@nuxt/icon',
+    '@nuxtjs/supabase',
   ],
   css: ['@/assets/css/main.css', '@/assets/css/tailwind.css'],
+
   app: {
     pageTransition: { name: 'page', mode: 'out-in' }
+  },
+
+  supabase: {
+    url: process.env.SUPABASE_URL,
+    key: process.env.SUPABASE_KEY
   },
 
   // Enable build transpilation for specific modules if necessary
@@ -16,13 +23,20 @@ export default defineNuxtConfig({
     transpile: ['vuedraggable', '@supabase/supabase-js'],
   },
 
-  // Add runtime config if using Supabase (e.g., environment variables)
-  runtimeConfig: {
-    public: {
-      supabaseUrl: process.env.SUPABASE_URL,
-      supabaseKey: process.env.SUPABASE_KEY,
-    },
+  redirect: {
+    login: '/login',
+    callback: '/confirm',
+    include: undefined,
+    exclude: [],
+    cookieRedirect: false,
   },
+
+  cookieOptions: {
+    maxAge: 60 * 60 * 8,
+    sameSite: 'lax',
+    secure: true
+  },
+
 
   // Ensure TypeScript is properly configured
   typescript: {
