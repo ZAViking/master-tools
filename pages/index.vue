@@ -110,7 +110,7 @@
 </template>
 
 <script setup>
-    import { useRuntimeConfig } from '#imports';
+    // import { useRuntimeConfig } from '#imports';
 
     const config = useRuntimeConfig();
     console.log(config.public.supabaseUrl); // Example use of runtime config
@@ -121,7 +121,7 @@
     // const supabaseKey = process.env.SUPABASE_KEY
     // const supabase = createClient(supabaseUrl, supabaseKey)
     import { defineComponent } from 'vue';
-    import { useRuntimeConfig } from '#imports';
+    // import { useRuntimeConfig } from '#imports';
 
     import draggable from "vuedraggable"; // For drag-and-drop
     import { createClient } from "@supabase/supabase-js"; // Supabase client
