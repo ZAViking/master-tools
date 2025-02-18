@@ -11,6 +11,11 @@
 - [https://app.daily.dev/posts/od1s1axwl](https://vscodethemes.com/?ref=dailydev)
 - https://youtu.be/I2mWnh66Bkg
 - https://www.supahero.io/?ref=dailydev
+- https://medium.com/@hii_mohit/8-essential-tools-for-frontend-developers-in-2024-f2bdefe2f253
+- https://github.com/john-smilga/react-projects?tab=readme-ov-file
+- https://www.marktechpost.com/2025/01/01/13-free-ai-courses-on-ai-agents-in-2025/?ref=dailydev
+- https://tailgrids.com/blog/tailwind-resources?ref=dailydev
+- https://github.com/Lissy93/web-check
 # FIveM Links
 - https://gtacars.net/gta5?page=12
 - https://docs.fivem.net/docs/game-references/vehicle-models/
